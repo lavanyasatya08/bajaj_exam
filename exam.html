@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BCE7563</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Frontend Application</h1>
+        <div class="input-section">
+            <textarea id="jsonInput" placeholder='Enter JSON here'></textarea>
+            <button onclick="submitJson()">Submit</button>
+            <p id="error" class="error"></p>
+        </div>
+        <div id="dropdownSection" class="dropdown-section hidden">
+            <label for="options">Select Filters:</label>
+            <select id="options" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="highest-lowercase">Highest Lowercase Alphabet</option>
+            </select>
+            <button onclick="filterResponse()">Filter Response</button>
+        </div>
+        <div id="responseSection" class="response-section hidden">
+            <h2>Filtered Response:</h2>
+            <pre id="responseDisplay"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
